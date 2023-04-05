@@ -3,11 +3,7 @@ import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <ul>
-      <li *ngFor="let product of products">{{ product.name }}</li>
-    </ul>
-  `
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   public products: any[] | undefined;
